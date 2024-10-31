@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCare.Appointments.API", "HealthCare.Appointments.API\HealthCare.Appointments.API.csproj", "{823D91D5-CBB0-4F94-80AC-19A17A1E6C2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCare.SharedAssets", "HealthCare.SharedAssets\HealthCare.SharedAssets.csproj", "{33A897D1-72EC-4261-B79E-AEAECF010F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentCreatedAzureServiceBusConsumer", "AppointmentCreatedAzureServiceBusConsumer\AppointmentCreatedAzureServiceBusConsumer.csproj", "{91C4A6BE-5D96-4B60-85E0-D43858A92EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentCreatedConsumer", "AppointmentCreatedConsumer\AppointmentCreatedConsumer.csproj", "{9D64F3CE-82F6-4087-A056-96A00C288640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceBusConsumerWorkerService", "AzureServiceBusConsumerWorkerService\AzureServiceBusConsumerWorkerService.csproj", "{05451F77-0C3B-499F-8954-2EC6368B5541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{823D91D5-CBB0-4F94-80AC-19A17A1E6C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{823D91D5-CBB0-4F94-80AC-19A17A1E6C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{823D91D5-CBB0-4F94-80AC-19A17A1E6C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{823D91D5-CBB0-4F94-80AC-19A17A1E6C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A897D1-72EC-4261-B79E-AEAECF010F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A897D1-72EC-4261-B79E-AEAECF010F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A897D1-72EC-4261-B79E-AEAECF010F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A897D1-72EC-4261-B79E-AEAECF010F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C4A6BE-5D96-4B60-85E0-D43858A92EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C4A6BE-5D96-4B60-85E0-D43858A92EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C4A6BE-5D96-4B60-85E0-D43858A92EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C4A6BE-5D96-4B60-85E0-D43858A92EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702F4EE7-6D47-436C-AA75-CD3C36BD52CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702F4EE7-6D47-436C-AA75-CD3C36BD52CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702F4EE7-6D47-436C-AA75-CD3C36BD52CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702F4EE7-6D47-436C-AA75-CD3C36BD52CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D64F3CE-82F6-4087-A056-96A00C288640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D64F3CE-82F6-4087-A056-96A00C288640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D64F3CE-82F6-4087-A056-96A00C288640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D64F3CE-82F6-4087-A056-96A00C288640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05451F77-0C3B-499F-8954-2EC6368B5541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05451F77-0C3B-499F-8954-2EC6368B5541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05451F77-0C3B-499F-8954-2EC6368B5541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05451F77-0C3B-499F-8954-2EC6368B5541}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
