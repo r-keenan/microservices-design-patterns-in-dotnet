@@ -1,4 +1,5 @@
 using AutoMapper;
+using Google.Cloud.PubSub.V1;
 using HealthCare.Appointments.API.Constants;
 using HealthCare.Appointments.API.Dtos;
 using HealthCare.Appointments.API.Models;
@@ -15,6 +16,7 @@ namespace HealthCare.Appointments.API.Controllers;
 [Route("[controller]")]
 public class AppointmentsController : ControllerBase
 {
+    private readonly IPubSubMessagePublisher _pubSubMessagePublisher;
     private readonly IPublishEndpoint _publishEndpoint;
     private readonly IAppointmentRepository _appointmentRepository;
     private readonly IDoctorsApiRepository _doctorsRepository;
@@ -24,6 +26,7 @@ public class AppointmentsController : ControllerBase
     private readonly ApiEndpoints _apiEndpoints;
 
     public AppointmentsController(
+        IPubSubMessagePublisher pubSubMessagePublisher,
         IPublishEndpoint publishEndpoint,
         IAppointmentRepository appointmentRepository,
         IDoctorsApiRepository doctorsRepository,
@@ -33,6 +36,7 @@ public class AppointmentsController : ControllerBase
         ApiEndpoints apiEndpoints
     )
     {
+        _pubSubMessagePublisher = pubSubMessagePublisher;
         _publishEndpoint = publishEndpoint;
         _appointmentRepository = appointmentRepository;
         _doctorsRepository = doctorsRepository;
@@ -115,6 +119,9 @@ public class AppointmentsController : ControllerBase
 
         // Publish to Azure Service Bus
         await _messageBus.PublishMessage(appointmentMessage, "appointments");
+
+        // Publish to Google Pub/Sub
+        await _pubSubMessagePublisher.PublishMessage(appointmentMessage, "appointments");
         return Ok();
     }
 

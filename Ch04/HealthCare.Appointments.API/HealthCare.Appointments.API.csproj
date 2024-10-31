@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Automapper" Version="13.0.1" />
     <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.2" />
+    <PackageReference Include="Google.Cloud.PubSub.V1" Version="3.19.0" />
     <PackageReference Include="MassTransit" Version="8.3.0" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
