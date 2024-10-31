@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentCreatedConsumer"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceBusConsumerWorkerService", "AzureServiceBusConsumerWorkerService\AzureServiceBusConsumerWorkerService.csproj", "{05451F77-0C3B-499F-8954-2EC6368B5541}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GcpPubSubConsumer", "GcpPubSubConsumer\GcpPubSubConsumer.csproj", "{F5ECBECA-02CA-44CA-A00E-9D23F08755ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GcpPubSubConsumerWorkerService", "GcpPubSubConsumerWorkerService\GcpPubSubConsumerWorkerService.csproj", "{5F308DB8-9B9C-4BB9-B504-8B5A0FC4CCF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,5 +50,13 @@ Global
 		{05451F77-0C3B-499F-8954-2EC6368B5541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05451F77-0C3B-499F-8954-2EC6368B5541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05451F77-0C3B-499F-8954-2EC6368B5541}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5ECBECA-02CA-44CA-A00E-9D23F08755ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5ECBECA-02CA-44CA-A00E-9D23F08755ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5ECBECA-02CA-44CA-A00E-9D23F08755ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5ECBECA-02CA-44CA-A00E-9D23F08755ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F308DB8-9B9C-4BB9-B504-8B5A0FC4CCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F308DB8-9B9C-4BB9-B504-8B5A0FC4CCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F308DB8-9B9C-4BB9-B504-8B5A0FC4CCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F308DB8-9B9C-4BB9-B504-8B5A0FC4CCF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@ using Google.Protobuf;
 
 namespace HealthCare.Appointments.API.Services
 {
-    public class PubSubMessagePublisher : IMessagePublisher
+    public class PubSubMessagePublisher : IPubSubMessagePublisher
     {
         private readonly IConfiguration _configuration;
 
@@ -28,7 +28,7 @@ namespace HealthCare.Appointments.API.Services
             var pubsubMessage = new PubsubMessage { Data = ByteString.CopyFromUtf8(messageJson) };
 
             // Publish the message
-            var messagedId = await publisher.PublishAsync(pubsubMessage);
+            await publisher.PublishAsync(pubsubMessage);
         }
     }
 }

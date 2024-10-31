@@ -7,8 +7,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 var connectionString = builder.Configuration.GetConnectionString("AppointmentsDatabaseConnection");
 builder.Services.AddDbContext<AppointmentsDbContext>(opt =>
 {
@@ -28,6 +26,7 @@ builder.Services.AddSingleton<ApiEndpoints>();
 
 builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IMessagePublisher, MessagePublisher>();
+builder.Services.AddScoped<IPubSubMessagePublisher, PubSubMessagePublisher>();
 
 builder.Services.AddTransient(typeof(IHttpRepository<>), typeof(HttpRepository<>));
 builder.Services.AddTransient<IDoctorsApiRepository, DoctorsApiRepository>();
